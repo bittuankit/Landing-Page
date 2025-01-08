@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-width: 90%;
+  max-height: 100vh;
+  font-family: "Open Sans", serif;
+  background: #f4f4f4;
+}
+
+.nav-items {
+  width: 100%;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items .logo {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.nav-items .logo span {
+  color: #52aa4d;
+}
+
+.nav-items ul {
+  width: 20%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn button {
+  font-size: 0.9rem;
+  padding: 0.7rem 0.5rem;
+  background: #52aa4d;
+  border-radius: 0.3rem;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  outline: "none";
+}
+
+.hero .hero-header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+}
+
+.left h1 {
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+
+.left span {
+  color: #52aa4d;
+  font-weight: 600;
+}
+
+.left p {
+  color: #444343c1;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+.left .btn {
+  margin-top: 3rem;
+}
+
+.right {
+  margin: 1rem 1rem 0 0;
+}
+
+.right img {
+  width: 450px;
+  margin: 2rem 5rem 0 0;
+}
+
+.hero .hero-footer {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.hero-footer h3 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.hero-footer p {
+  color: #444343c1;
+}
+
+.company ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0;
+  list-style-type: none;
+}
