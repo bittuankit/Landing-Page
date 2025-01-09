@@ -40,3 +40,7 @@
   box-shadow: 1px 1px 50px #fff;
   transition: 0.2s;
 }
+
+label::after {
+  content: " *";
+}

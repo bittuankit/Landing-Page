@@ -1,5 +1,6 @@
 const icon = document.querySelector(".fa-moon");
 const body = document.querySelector("body");
+const hero = document.querySelector("hero bg");
 const navItems = document.querySelectorAll(".nav-items ul a");
 const para = document.querySelectorAll("p");
 const company = document.querySelectorAll(".company li");
@@ -14,5 +15,6 @@ icon.addEventListener("click", (e) => {
     para.forEach((item) => (item.style.color = "#fffc"));
   }
   body.classList.toggle("bg-black");
+  hero.classList.toggle("bg");
   company.forEach((comp) => comp.classList.toggle("bg-company"));
 });
