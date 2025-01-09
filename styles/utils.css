@@ -10,3 +10,33 @@
   font-weight: 500;
   font-size: 1rem;
 }
+
+.bg-white {
+  width: 100%;
+  min-width: 90%;
+  max-height: 100vh;
+  font-family: "Open Sans", serif;
+  background-color: #fff;
+  color: #000;
+}
+
+.bg-black {
+  width: 100%;
+  min-width: 90%;
+  max-height: 100vh;
+  font-family: "Open Sans", serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.bg-company {
+  background: #fff;
+  margin: 0 1rem;
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.5rem;
+}
+
+.bg-company:hover {
+  box-shadow: 1px 1px 50px #fff;
+  transition: 0.2s;
+}
