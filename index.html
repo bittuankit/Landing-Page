@@ -11,12 +11,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
-    <div class="top-bg">
+    <div class="top-bg home">
         <div class="bg"></div>
-        <header>
+        <header id="header">
             <div class="navbar container">
                 <div class="nav-items">
                     <div class="logo">
@@ -24,16 +31,16 @@
                         <h1>Te<span>n</span>et </h1>
                     </div>
                     <ul>
-                        <a href="#" class="link">
+                        <a href="#home" class="link">
                             <li>Home</li>
                         </a>
-                        <a href="#" class="link">
+                        <a href="#community" class="link">
                             <li>Community</li>
                         </a>
-                        <a href="#" class="link">
+                        <a href="#about" class="link">
                             <li>About</li>
                         </a>
-                        <a href="#" class="link">
+                        <a href="#contact" class="link">
                             <li>Contact</li>
                         </a>
                     </ul>
@@ -45,8 +52,8 @@
                 <i class="fa-solid fa-moon"></i>
             </div>
         </header>
-        <main>
-            <section class="hero">
+        <main id="main" data-scroll-container>
+            <section id="home" class="hero" data-scroll>
                 <div class="hero-header container">
                     <div class="left">
                         <h1>Lessons and insights <br> <span>from 8 years</span></h1>
@@ -74,26 +81,26 @@
                 </div>
             </section>
     </div>
-    <section class="community">
+    <section id="community" class="community" data-scroll>
         <div class="community-content container">
             <div class="heading" style="text-align: center;">
                 <h1>Manage your entire community<br> in a single system</h1>
                 <p>Who is Nextcent suitable for?</p>
             </div>
             <div class="company-container">
-                <div class="c1">
+                <div class="cmp-des c1">
                     <img src="./assets/./ci1.svg" alt="company-1">
                     <h3>Membership<br> Organisations</h3>
                     <p>Our membership management software provides full automation of membership renewals and
                         payments
                 </div>
-                <div class="c2">
+                <div class="cmp-des c2">
                     <img src="./assets/./ci2.svg" alt="company-2">
                     <h3>National<br> Associations</h3>
                     <p>Our membership management software provides full automation of membership renewals and
                         payments
                 </div>
-                <div class="c3">
+                <div class="cmp-des c3">
                     <img src="./assets/./ci3.svg" alt="company-3">
                     <h3>Clubs And <br>Groups</h3>
                     <p>Our membership management software provides full automation of membership renewals and
@@ -144,7 +151,7 @@
             </div>
         </div>
     </section>
-    <section class="about container">
+    <section class="about container" id="about" data-scroll>
         <div class="left">
             <h1>About Us</h1>
             <p>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue
@@ -165,7 +172,7 @@
             <img src="./assets/pana.svg" alt="pana">
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact" data-scroll>
         <div class="bg"></div>
         <div class="container">
             <div class="contact-items">
@@ -193,7 +200,7 @@
                 </div>
             </div>
     </section>
-    <section class="footer">
+    <section class="footer" data-scroll>
         <div class="footer-items container">
             <div class="basic-details">
                 <div class="logo">
