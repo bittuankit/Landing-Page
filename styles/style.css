@@ -223,7 +223,6 @@ body {
 
 .community-dashboard .right {
   display: flex;
-  align-self: center;
   width: 30%;
 }
 
