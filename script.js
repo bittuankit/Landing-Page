@@ -131,7 +131,6 @@ gsap.from(".contact .bg", {
   height: "0",
   duration: 2,
   scrollTrigger: {
-    markers: true,
     trigger: ".contact",
     scroller: "body",
     start: "top 100%",
