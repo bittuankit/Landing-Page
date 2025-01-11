@@ -21,6 +21,15 @@
     margin: 0;
   }
 
+  .header {
+    height: 0;
+    background: #d9e0e7;
+    min-width: 100%;
+    position: relative;
+    top: 0;
+    z-index: 150;
+  }
+
   .top-bg {
     position: unset;
     overflow-x: unset;
@@ -44,6 +53,10 @@
 
   .navbar .fa-bars {
     display: block;
+  }
+
+  .nav-items {
+    width: 100%;
   }
 
   .nav-items .logo img {
@@ -370,13 +383,22 @@
     margin: 0;
   }
 
+  .header {
+    height: 0;
+    background: #d9e0e7;
+    min-width: 100%;
+    position: relative;
+    top: 0;
+    z-index: 150;
+  }
+
   .top-bg {
     position: relative;
     overflow-x: hidden;
   }
 
   .top-bg .bg {
-    display: block;
+    display: none;
   }
 
   .navbar {
@@ -391,7 +413,7 @@
     display: none;
   }
 
-  .navbar .fa-bars {
+  .nav-items .fa-bars {
     display: block;
   }
 

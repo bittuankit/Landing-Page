@@ -40,6 +40,15 @@
   color: #fff;
 }
 
+.header-black {
+  height: 8vh;
+  background: #000;
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 150;
+}
+
 .bg-company {
   background: #fff;
   margin: 0 1rem;

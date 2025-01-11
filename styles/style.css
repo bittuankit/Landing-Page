@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 body {
   width: 100%;
   min-width: 90%;
@@ -26,10 +31,10 @@ body {
   rotate: 4deg;
 }
 
-#header {
+.header {
   height: 8vh;
   background: #d9e0e7;
-  width: 100%;
+  min-width: 100%;
   position: fixed;
   top: 0;
   z-index: 150;

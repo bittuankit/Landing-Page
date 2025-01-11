@@ -1,5 +1,6 @@
 const icon = document.querySelector(".fa-moon");
 const body = document.querySelector("body");
+const header = document.querySelector(".header");
 const tempDiv = document.querySelector(".bg");
 const navItems = document.querySelectorAll(".nav-items ul a");
 const para = document.querySelectorAll("p");
@@ -22,6 +23,7 @@ icon.addEventListener("click", (e) => {
     tempDiv.style.display = "none";
   }
   body.classList.toggle("bg-black");
+  header.classList.toggle("bg-black");
 });
 
 //gsap
@@ -87,7 +89,7 @@ gsap.from(".community-content .heading", {
   scrollTrigger: {
     trigger: ".community-content .heading",
     scroller: "body",
-    start: "top 70%",
+    start: "top 80%",
   },
 });
 
@@ -98,7 +100,7 @@ gsap.from(".company-container .cmp-des", {
   scrollTrigger: {
     trigger: ".community-content .cmp-des",
     scroller: "body",
-    start: "top 50%",
+    start: "top 80%",
   },
 });
 
@@ -106,7 +108,7 @@ gsap.from(".company-container .cmp-des", {
 
 gsap.from(".about .left", {
   x: -1800,
-  duration: 1.5,
+  duration: 1,
   scrollTrigger: {
     trigger: ".about .left",
     scroller: "body",
@@ -116,7 +118,7 @@ gsap.from(".about .left", {
 
 gsap.from(".about .right", {
   x: 1800,
-  duration: 1.5,
+  duration: 1,
   scrollTrigger: {
     trigger: ".about .left",
     scroller: "body",
